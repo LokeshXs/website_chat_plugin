@@ -1,4 +1,4 @@
-const URL_LINK = "https://tailortalk.netlify.app//";
+const URL_LINK = "https://feature--timely-entremet-b6e81d.netlify.app/";
 
 const link = document.createElement("link");
 link.rel = "stylesheet";
