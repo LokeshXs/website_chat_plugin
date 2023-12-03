@@ -4,7 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Roboto+Mono:wght@300;400;500;600;700&family=Signika+Negative&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap");
 
 :root {
-  --chat-window-primary-color: #4764fc; /* Default background color */
+  --chat-window-primary-color: #4764fc;
+  /* Default background color */
 }
 
 .error-message {
@@ -40,7 +41,7 @@
   border-top-right-radius: 25px;
 }
 
-.chat-header > image {
+.chat-header>image {
   background-color: white;
   color: #7b7b7b;
   border-radius: 10px;
@@ -48,14 +49,14 @@
   margin-right: 10px;
 }
 
-.header-info > div,
-.header-info > p {
+.header-info>div,
+.header-info>p {
   margin: 0;
   padding: 2px;
   font-size: 11px;
 }
 
-.header-info > div {
+.header-info>div {
   font-weight: 500;
   font-size: 15px;
 }
@@ -108,7 +109,8 @@
 
   filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.5));
 }
-.chat-icon > img {
+
+.chat-icon>img {
   height: 40px;
   cursor: pointer;
 }
@@ -174,13 +176,14 @@
   background-color: transparent;
   outline: none;
 }
+
 .message-input::placeholder {
   color: #a3a3a3;
 }
 
 /* Links color */
-a{
-  color: var(--chat-window-primary-color) !important;
+.bot-message a {
+  color: var(--chat-window-primary-color);
 }
 
 /* User Message Styles */
@@ -285,13 +288,16 @@ a{
     fill: transparent;
   }
 }
+
 .dot {
   animation: 1s blink infinite;
   fill: grey;
 }
+
 .dot:nth-child(2) {
   animation-delay: 250ms;
 }
+
 .dot:nth-child(3) {
   animation-delay: 500ms;
 }
@@ -309,12 +315,14 @@ a{
     height: 72%;
   }
 }
+
 @media (max-width: 470px) {
   .chat-window {
     width: 66%;
     height: 80%;
   }
 }
+
 @media (max-width: 360px) {
   .chat-window {
     width: 98%;
@@ -373,6 +381,8 @@ a{
   /* min-width: 30px; */
   border: 0.5px solid gray;
   cursor: pointer;
-  white-space: nowrap; /* Prevent line breaks inside suggestion items */
-  margin-bottom: 5px; /* Add margin between suggestion items */
+  white-space: nowrap;
+  /* Prevent line breaks inside suggestion items */
+  margin-bottom: 5px;
+  /* Add margin between suggestion items */
 }
